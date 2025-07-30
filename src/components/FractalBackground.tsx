@@ -2,69 +2,46 @@ import React from 'react';
 
 const FractalBackground: React.FC = () => {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
-      <div className="absolute inset-0 opacity-30">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 1920 1080"
-          preserveAspectRatio="xMidYMid slice"
-        >
-          <defs>
-            <linearGradient id="fractal-gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#00E0FF" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#DE3EFF" stopOpacity="0.05" />
-              <stop offset="100%" stopColor="#00FF88" stopOpacity="0.1" />
-            </linearGradient>
-            <linearGradient id="fractal-gradient-2" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stopColor="#FF4500" stopOpacity="0.1" />
-              <stop offset="50%" stopColor="#00E0FF" stopOpacity="0.05" />
-              <stop offset="100%" stopColor="#DE3EFF" stopOpacity="0.1" />
-            </linearGradient>
-          </defs>
-          
-          {/* Animated fractal lines */}
-          <g className="animate-pulse-slow">
-            <path
-              d="M0,200 Q480,100 960,200 T1920,200"
-              stroke="url(#fractal-gradient-1)"
-              strokeWidth="2"
-              fill="none"
-              className="animate-flow-1"
-            />
-            <path
-              d="M0,400 Q480,500 960,400 T1920,400"
-              stroke="url(#fractal-gradient-2)"
-              strokeWidth="1.5"
-              fill="none"
-              className="animate-flow-2"
-            />
-            <path
-              d="M0,600 Q480,700 960,600 T1920,600"
-              stroke="url(#fractal-gradient-1)"
-              strokeWidth="1"
-              fill="none"
-              className="animate-flow-3"
-            />
-            <path
-              d="M0,800 Q480,900 960,800 T1920,800"
-              stroke="url(#fractal-gradient-2)"
-              strokeWidth="2"
-              fill="none"
-              className="animate-flow-1"
-            />
-          </g>
-          
-          {/* Floating nodes */}
-          <g className="animate-float">
-            <circle cx="300" cy="150" r="3" fill="#00E0FF" opacity="0.6" className="animate-pulse" />
-            <circle cx="800" cy="350" r="2" fill="#DE3EFF" opacity="0.4" className="animate-pulse-slow" />
-            <circle cx="1200" cy="250" r="4" fill="#00FF88" opacity="0.5" className="animate-pulse" />
-            <circle cx="1600" cy="450" r="2.5" fill="#FF4500" opacity="0.6" className="animate-pulse-slow" />
-            <circle cx="500" cy="650" r="3.5" fill="#00E0FF" opacity="0.4" className="animate-pulse" />
-            <circle cx="1400" cy="750" r="2" fill="#DE3EFF" opacity="0.5" className="animate-pulse-slow" />
-          </g>
-        </svg>
-      </div>
+    <div className="fixed inset-0 z-1 pointer-events-none">
+      {/* Malla de líneas sutiles */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `
+            linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)
+          `,
+          backgroundSize: '80px 80px'
+        }}
+      />
+      
+      {/* Líneas curvas diagonales */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `
+            radial-gradient(ellipse 200px 100px at 0% 50%, rgba(168, 85, 247, 0.2), transparent),
+            radial-gradient(ellipse 200px 100px at 100% 50%, rgba(124, 58, 237, 0.2), transparent),
+            radial-gradient(ellipse 100px 200px at 50% 0%, rgba(99, 102, 241, 0.15), transparent),
+            radial-gradient(ellipse 100px 200px at 50% 100%, rgba(139, 92, 246, 0.15), transparent)
+          `,
+          backgroundSize: '100% 100%'
+        }}
+      />
+      
+      {/* Puntos fractales */}
+      <div 
+        className="absolute inset-0"
+        style={{
+          backgroundImage: `
+            radial-gradient(circle at 20% 30%, rgba(139, 92, 246, 0.4) 2px, transparent 2px),
+            radial-gradient(circle at 80% 20%, rgba(168, 85, 247, 0.35) 2px, transparent 2px),
+            radial-gradient(circle at 30% 80%, rgba(124, 58, 237, 0.4) 2px, transparent 2px),
+            radial-gradient(circle at 70% 70%, rgba(99, 102, 241, 0.35) 2px, transparent 2px)
+          `,
+          backgroundSize: '200px 200px, 250px 250px, 180px 180px, 220px 220px'
+        }}
+      />
     </div>
   );
 };

@@ -250,7 +250,7 @@ const Footer: React.FC = () => {
             <div className="hidden sm:block w-1 h-1 bg-gray-600 rounded-full"></div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span><strong className="text-green-400">MADRID, ESPAÑA</strong></span>
+              <span><strong className="text-green-400">SANTIAGO, CHILE</strong></span>
             </div>
           </div>
         </div>

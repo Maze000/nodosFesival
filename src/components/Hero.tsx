@@ -15,7 +15,11 @@ const Hero: React.FC = () => {
           id="hero-title" 
           className="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold font-orbitron mb-6 leading-tight"
         >
-          <span className="block text-cyan-400 animate-glow">NODOS</span>
+          <span className="block relative">
+            <span className="absolute inset-0 bg-gradient-to-r from-purple-600 via-violet-600 to-indigo-600 bg-clip-text text-transparent animate-pulse opacity-75">NODOS</span>
+            <span className="relative bg-gradient-to-r from-purple-500 via-violet-500 to-indigo-500 bg-clip-text text-transparent animate-bounce" style={{ animationDuration: '3s' }}>NODOS</span>
+            <span className="absolute inset-0 bg-gradient-to-r from-purple-700 via-violet-700 to-indigo-700 bg-clip-text text-transparent opacity-35 animate-ping" style={{ animationDuration: '4s' }}>NODOS</span>
+          </span>
           <span className="block text-sm sm:text-lg lg:text-xl font-normal mt-4 text-gray-300 tracking-wider">
             MÚSICA ELECTRÓNICA INCLUSIVA
           </span>

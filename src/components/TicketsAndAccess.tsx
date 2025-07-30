@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Ticket, Users, Heart, Shield, Check, Info } from 'lucide-react';
 
 const TicketsAndAccess: React.FC = () => {
-  const [selectedTicket, setSelectedTicket] = useState<string | null>(null);
 
   const ticketTypes = [
     {
       id: 'general',
       name: 'General',
-      price: 45,
+      price: 35000,
       originalPrice: null,
       description: 'Acceso completo al evento con todas las tecnologías adaptativas',
       features: [
@@ -29,8 +28,8 @@ const TicketsAndAccess: React.FC = () => {
     {
       id: 'accesible',
       name: 'Accesible',
-      price: 35,
-      originalPrice: 45,
+      price: 27000,
+      originalPrice: 35000,
       description: 'Entrada con descuento para personas con credencial de discapacidad',
       features: [
         'Acceso completo como entrada general',
@@ -50,7 +49,7 @@ const TicketsAndAccess: React.FC = () => {
     {
       id: 'asistente',
       name: 'Asistente',
-      price: 20,
+      price: 15000,
       originalPrice: null,
       description: 'Para acompañantes que brindan apoyo esencial',
       features: [
@@ -168,11 +167,11 @@ const TicketsAndAccess: React.FC = () => {
                   <div className="flex items-center justify-center gap-2 mb-3">
                     {ticket.originalPrice && (
                       <span className="text-lg text-gray-500 line-through">
-                        €{ticket.originalPrice}
+                        ${ticket.originalPrice.toLocaleString('es-CL')}
                       </span>
                     )}
                     <span className={`text-3xl sm:text-4xl font-bold ${colorClasses.text}`}>
-                      €{ticket.price}
+                      ${ticket.price.toLocaleString('es-CL')}
                     </span>
                   </div>
                   
@@ -221,8 +220,7 @@ const TicketsAndAccess: React.FC = () => {
                 {/* Purchase Button */}
                 <button 
                   className={`w-full py-3 bg-gradient-to-r ${colorClasses.button} text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-${ticket.color}-500 focus:ring-offset-2 focus:ring-offset-black`}
-                  onClick={() => setSelectedTicket(ticket.id)}
-                  aria-label={`Comprar entrada ${ticket.name} por €${ticket.price}`}
+                  aria-label={`Comprar entrada ${ticket.name} por $${ticket.price.toLocaleString('es-CL')}`}
                 >
                   <Ticket className="w-5 h-5 inline mr-2" />
                   Comprar Entrada

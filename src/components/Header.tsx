@@ -23,14 +23,14 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <header className="relative z-50 bg-black/90 backdrop-blur-sm border-b border-cyan-500/20" role="banner">
+    <header className="relative z-50 bg-black/90 backdrop-blur-sm border-b border-purple-500/20" role="banner">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Navegación principal">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a 
               href="#inicio" 
-              className="text-2xl sm:text-3xl font-bold font-orbitron text-cyan-400 hover:text-cyan-300 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg px-2 py-1"
+              className="text-2xl sm:text-3xl font-bold font-orbitron bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-violet-300 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg px-2 py-1"
               aria-label="NODOS - Volver al inicio"
             >
               NODOS
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-300 hover:text-cyan-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-offset-2 focus:ring-offset-black"
+                  className="text-gray-300 hover:text-purple-400 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-black"
                   aria-label={`Ir a ${item.label}`}
                 >
                   {item.label}
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-cyan-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 transition-colors duration-300"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-purple-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 transition-colors duration-300"
               aria-expanded={isMenuOpen}
               aria-label="Abrir menú de navegación"
             >

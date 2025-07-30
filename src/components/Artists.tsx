@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Volume2, Eye, Users, Headphones } from 'lucide-react';
+import { Volume2, Eye, Users, Headphones, Vibrate } from 'lucide-react';
 
 const Artists: React.FC = () => {
   const [activeArtist, setActiveArtist] = useState<number | null>(null);
@@ -35,7 +35,7 @@ const Artists: React.FC = () => {
     {
       name: "QUANTUM BEAT",
       genre: "Bass Heavy",
-      image: "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=400",
       description: "Maestro de las frecuencias bajas y la experiencia vibratoria corporal",
       accessibility: ["Plataformas resonantes", "Chalecos vibratorios", "Bajos intensificados"],
       icons: [Vibrate, Volume2, Users],
@@ -44,7 +44,7 @@ const Artists: React.FC = () => {
     {
       name: "DIGITAL SOUL",
       genre: "Progressive House",
-      image: "https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=400",
       description: "Fusiona elementos tradicionales con tecnología adaptativa innovadora",
       accessibility: ["Interpretación visual", "Bucle inductivo", "Contraste adaptativo"],
       icons: [Eye, Headphones, Users],
@@ -53,7 +53,7 @@ const Artists: React.FC = () => {
     {
       name: "FRACTAL FLOW",
       genre: "Experimental Electronic",
-      image: "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=400",
+      image: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=400",
       description: "Artista con discapacidad visual que crea experiencias sonoras inmersivas",
       accessibility: ["Navegación táctil", "Audio detallado", "Secuencias hápticas"],
       icons: [Volume2, Vibrate, Headphones],
@@ -61,15 +61,7 @@ const Artists: React.FC = () => {
     }
   ];
 
-  const Vibrate = ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M2 12h20" />
-      <path d="M6 8v8" />
-      <path d="M10 4v16" />
-      <path d="M14 4v16" />
-      <path d="M18 8v8" />
-    </svg>
-  );
+
 
   return (
     <section 
@@ -194,7 +186,7 @@ const Artists: React.FC = () => {
             <span className="text-cyan-400 font-semibold"> Descubre nuevas formas de sentir el ritmo.</span>
           </p>
           <button 
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-magenta-500 to-magenta-600 text-white font-semibold rounded-lg hover:from-magenta-600 hover:to-magenta-700 transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-magenta-500 focus:ring-offset-2 focus:ring-offset-black"
+            className="relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-purple-500 via-magenta-500 to-purple-600 text-white font-bold rounded-xl hover:from-purple-600 hover:via-magenta-600 hover:to-purple-700 transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-purple-500/50 focus:ring-offset-2 focus:ring-offset-black shadow-lg shadow-purple-500/25 hover:shadow-xl hover:shadow-purple-500/40 animate-pulse"
             aria-label="Ver programa completo de artistas"
           >
             <Users className="w-5 h-5" />

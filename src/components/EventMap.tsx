@@ -56,16 +56,6 @@ const EventMap: React.FC = () => {
     }
   ];
 
-  const Vibrate = ({ className }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M2 12h20" />
-      <path d="M6 8v8" />
-      <path d="M10 4v16" />
-      <path d="M14 4v16" />
-      <path d="M18 8v8" />
-    </svg>
-  );
-
   const getColorClasses = (color: string) => {
     const colors = {
       cyan: { bg: 'bg-cyan-500/30', border: 'border-cyan-500', text: 'text-cyan-400' },
