@@ -240,7 +240,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-              <span><strong className="text-cyan-400">15 DE MARZO 2025</strong></span>
+              <span><strong className="text-cyan-400">31 DE JULIO 2025</strong></span>
             </div>
             <div className="hidden sm:block w-1 h-1 bg-gray-600 rounded-full"></div>
             <div className="flex items-center gap-2">
