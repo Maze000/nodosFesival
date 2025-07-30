@@ -12,6 +12,7 @@ import TicketsAndAccess from './components/TicketsAndAccess';
 import CommunityGallery from './components/CommunityGallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import InclusiveChatbot from './components/InclusiveChatbot';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <InclusiveChatbot />
     </div>
   );
 }
