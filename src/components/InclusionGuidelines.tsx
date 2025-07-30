@@ -169,7 +169,7 @@ const InclusionGuidelines: React.FC = () => {
             <div className="space-y-6">
               <blockquote className="text-lg sm:text-xl text-gray-200 italic leading-relaxed">
                 "La accesibilidad no es una característica adicional. 
-                <span className="text-cyan-400 font-semibold"> Es el diseño base</span> 
+                <span className="text-cyan-400 font-semibold"> Es el diseño base </span> 
                 desde el cual construimos cada experiencia."
               </blockquote>
               

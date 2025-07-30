@@ -197,7 +197,7 @@ const Contact: React.FC = () => {
               <div className="space-y-2 text-sm text-gray-300">
                 <p>Centro Cultural Digital</p>
                 <p>Av. de la Innovación 123</p>
-                <p>28001 Madrid, España</p>
+                <p>28001 Santiago, Chile</p>
                 <p className="text-green-400 font-semibold mt-3">
                   Lun - Vie: 9:00 - 18:00h
                 </p>
