@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
               </p>
               <div className="flex items-center gap-2 text-gray-400 text-sm">
                 <Heart className="w-4 h-4 text-red-500" />
-                <span>Hecho con inclusión en Madrid</span>
+                <span>Hecho con inclusión en Santiago</span>
               </div>
             </div>
             
