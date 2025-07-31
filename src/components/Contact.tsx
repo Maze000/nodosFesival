@@ -328,7 +328,7 @@ const Contact: React.FC = () => {
                         onChange={handleInputChange}
                         className="w-4 h-4 text-cyan-500 focus:ring-cyan-500"
                       />
-                      <span className="text-gray-300">Videollamada con LSE</span>
+                      <span className="text-gray-300">Videollamada con LSA</span>
                     </label>
                     <label className="flex items-center gap-2 cursor-pointer">
                       <input

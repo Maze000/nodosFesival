@@ -3,18 +3,7 @@ import React from 'react';
 const FractalBackground: React.FC = () => {
   return (
     <div className="fixed inset-0 z-1 pointer-events-none">
-      <div className="absolute inset-0" style={{ filter: 'blur(1px) brightness(1.2)' }}>
-      <div 
-        className="absolute inset-0"
-        style={{
-          backgroundImage: `
-            linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)
-          `,
-          backgroundSize: '80px 80px'
-        }}
-      />
-      </div>
+      
       {/* Líneas curvas diagonales */}
       <div 
         className="absolute inset-0"
