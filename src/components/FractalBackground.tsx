@@ -3,7 +3,7 @@ import React from 'react';
 const FractalBackground: React.FC = () => {
   return (
     <div className="fixed inset-0 z-1 pointer-events-none">
-      <div className="absolute inset-0" style={{ filter: 'blur(1px) brightness(1.2)' }}>
+      <div className="absolute inset-0" style={{ filter: 'blur(3px,4px,5px) brightness(1.2)' }}>
       <div 
         className="absolute inset-0"
         style={{
