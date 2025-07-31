@@ -182,7 +182,7 @@ const InclusionGuidelines: React.FC = () => {
                 </p>
                 
                 <p className="leading-relaxed">
-                  Nuestro equipo incluye personas con discapacidad en todas las fases 
+                  Nuestro equipo incluye personas con capacidades diferentes en todas las fases 
                   de diseño y producción, asegurando que cada decisión esté 
                   <span className="text-green-400 font-semibold"> validada por quienes 
                   realmente utilizarán estos espacios</span>.
