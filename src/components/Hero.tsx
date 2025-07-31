@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
         {/* Event Info */}
         <div className="text-center space-y-2">
           <p className="text-gray-400 text-sm sm:text-base">
-            <span className="text-orange-500 font-semibold">15 DE MARZO 2025</span> • 
+            <span className="text-orange-500 font-semibold">15 DE OCTUBRE 2025</span> • 
             <span className="text-cyan-400 font-semibold"> CENTRO CULTURAL DIGITAL</span>
           </p>
           <p className="text-gray-500 text-xs sm:text-sm">
