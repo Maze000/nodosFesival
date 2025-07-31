@@ -4,6 +4,7 @@ const FractalBackground: React.FC = () => {
   return (
     <div className="fixed inset-0 z-1 pointer-events-none">
       {/* Malla de líneas sutiles */}
+      <div className="absolute inset-0" style={{ filter: 'blur(2px)' }}>
       <div 
         className="absolute inset-0"
         style={{
@@ -14,7 +15,7 @@ const FractalBackground: React.FC = () => {
           backgroundSize: '80px 80px'
         }}
       />
-      
+      </div>
       {/* Líneas curvas diagonales */}
       <div 
         className="absolute inset-0"
