@@ -3,7 +3,6 @@ import React from 'react';
 const FractalBackground: React.FC = () => {
   return (
     <div className="fixed inset-0 z-1 pointer-events-none">
-      {/* Malla de líneas sutiles */}
       <div className="absolute inset-0" style={{ filter: 'blur(2px)' }}>
       <div 
         className="absolute inset-0"
@@ -20,12 +19,13 @@ const FractalBackground: React.FC = () => {
       <div 
         className="absolute inset-0"
         style={{
-          backgroundImage:  `
-          linear-gradient(rgba(139, 92, 246, 0.3) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(139, 92, 246, 0.3) 1px, transparent 1px)
-        `,
-          backgroundSize: '100% 100%',
-          filter: 'blur(10px)',
+          backgroundImage: `
+            radial-gradient(ellipse 200px 100px at 0% 50%, rgba(168, 85, 247, 0.2), transparent),
+            radial-gradient(ellipse 200px 100px at 100% 50%, rgba(124, 58, 237, 0.2), transparent),
+            radial-gradient(ellipse 100px 200px at 50% 0%, rgba(99, 102, 241, 0.15), transparent),
+            radial-gradient(ellipse 100px 200px at 50% 100%, rgba(139, 92, 246, 0.15), transparent)
+          `,
+          backgroundSize: '100% 100%'
         }}
       />
       
